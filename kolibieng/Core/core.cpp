@@ -55,9 +55,12 @@ private:
             isrunning = false;
             cout << "shutting down..." << endl;
         }
-     
+        else if(inputa == "core --version" || inputa == "core --v"){
+            cout << "0.0.0.1" << endl;
+            
+        }
         else if(inputa == "help"){
-            cout << "available commands: help, exit, ext, status" << endl;
+            cout << "available commands: help, exit, ext, status, core --version / core --v" << endl;
 
         }
         else if(inputa == "status"){
@@ -67,6 +70,7 @@ private:
             cout << "--- Position X: " << posX << endl;
             cout << "--- Velocity X: " << velocityX << endl;
             cout << "---------------------------------" << endl;
+
         }
         else{
             cout << "unknown command" << endl;
